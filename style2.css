@@ -1,20 +1,50 @@
 /* NAVBAR */
 
+.navbar-brand {
+    margin-top: 15px;
+    margin-left: 20px;
+    display: flex;
+}
+
+.text-logo {
+    text-decoration: none;
+    color: cornflowerblue;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+
+.navbar-nav {
+    margin-left: 40%;
+}
+
 .nav-link:hover {
     border-bottom: solid 2px cornflowerblue;
 }
 
-/* CARD */
-
-.fa-check-circle {
-    padding-left: 88%;
+.fa-box {
+    color: cornflowerblue;
 }
 
-.fa-times {
-    padding-left: 83%;
+/* JUMBOTRON */
+
+.jumbotron {
+    margin-top: 20px;
+}
+
+/* CARD */
+
+.block-card {
+    justify-content: space-around;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .card {
+    max-width: 38rem; 
+    border-radius: 10px;
     transition: transform 0.5s;
 }
 
@@ -24,58 +54,95 @@
 
 /* CAROUSEL */
 
-#carousel {
-    width: 40%; 
-    height:auto;
+.text {
+    width: 50%; 
+    margin: auto; 
+    padding-bottom: 40px;
+}
+
+#carouselExampleIndicators {
+    width: 40%;
     margin: auto;
     border-radius: 10px;
-    background: lightgrey;
+    background-color: rgba(248, 252, 248, 0.699);
     border: solid 3px #138496;
 }
 
 /* FORM , CHECK-BOX */
 
+.form-row {
+    justify-content: center; 
+    margin-top: 20px;
+}
+
 .btn-info:hover {
     -webkit-animation: flip-scale-up-ver 0.5s ease-in-out reverse both;
-	        animation: flip-scale-up-ver 0.5s ease-in-out reverse both;
+    animation: flip-scale-up-ver 0.5s ease-in-out reverse both;
 }
 
 @-webkit-keyframes flip-scale-up-ver {
     0% {
-      -webkit-transform: scale(1) rotateY(0);
-              transform: scale(1) rotateY(0);
+        -webkit-transform: scale(1) rotateY(0);
+        transform: scale(1) rotateY(0);
     }
+
     50% {
-      -webkit-transform: scale(2.5) rotateY(90deg);
-              transform: scale(2.5) rotateY(90deg);
+        -webkit-transform: scale(2.5) rotateY(90deg);
+        transform: scale(2.5) rotateY(90deg);
     }
+
     100% {
-      -webkit-transform: scale(1) rotateY(180deg);
-              transform: scale(1) rotateY(180deg);
+        -webkit-transform: scale(1) rotateY(180deg);
+        transform: scale(1) rotateY(180deg);
     }
-  }
-  @keyframes flip-scale-up-ver {
+}
+
+@keyframes flip-scale-up-ver {
     0% {
-      -webkit-transform: scale(1) rotateY(0);
-              transform: scale(1) rotateY(0);
+        -webkit-transform: scale(1) rotateY(0);
+        transform: scale(1) rotateY(0);
     }
+
     50% {
-      -webkit-transform: scale(2.5) rotateY(90deg);
-              transform: scale(2.5) rotateY(90deg);
+        -webkit-transform: scale(2.5) rotateY(90deg);
+        transform: scale(2.5) rotateY(90deg);
     }
+
     100% {
-      -webkit-transform: scale(1) rotateY(180deg);
-              transform: scale(1) rotateY(180deg);
+        -webkit-transform: scale(1) rotateY(180deg);
+        transform: scale(1) rotateY(180deg);
     }
-  }
+}
 
-  
+/* FOOTER */
 
-  @media only screen and (min-device-width : 280px) and (max-device-width : 653px) {
+footer {
+    margin-top: 30px;
+}
+
+.text-center {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-device-width : 991px) {
+    .nav-link:hover {
+        border-bottom: none;
+    }
+
+    .nav-link {
+        display: flex;
+        margin-left: 10%;
+    }
+
+}
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 653px) {
 
     .display-4 {
-        font-size: 30px; 
-       }
+        font-size: 30px;
+    }
 
     .contenair {
         width: 90%;
@@ -86,35 +153,7 @@
         width: 85%;
     }
 
-    .fa-check-circle {
-        padding-left: 63%;
+    #carouselExampleIndicators {
+        width: 80%;
     }
-
-    .fa-times {
-        padding-left: 47%;
-    }
-
-    #carousel{
-        width: 80%; 
-      }
-  }
-
-  @media only screen and (min-device-width : 375px) and (max-device-width : 833px) {
-    .fa-check-circle {
-        padding-left: 74%;
-    }
-
-    .fa-times {
-        padding-left: 62%;
-    }
-  }
-
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .fa-check-circle {
-        padding-left: 88%;
-    }
-
-    .fa-times {
-        padding-left: 83%;
-    }
-  }
+}

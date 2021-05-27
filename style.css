@@ -1,131 +1,255 @@
 /* NAVBAR */
 
+.navbar-brand {
+  margin-top: 15px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.text-logo {
+  text-decoration: none;
+  color: cornflowerblue;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+.navbar-nav {
+  margin-left: 40%;
+}
+
 .nav-link:hover {
-    border-bottom: solid 2px cornflowerblue;
+  border-bottom: solid 2px cornflowerblue;
 }
 
-.btn-outline-success{
-    -webkit-animation: flip-scale-up-ver 0.5s ease-in-out reverse both;
-	        animation: flip-scale-up-ver 0.5s ease-in-out reverse both;
+.fa-box {
+  color: cornflowerblue;
 }
 
-@-webkit-keyframes flip-scale-up-ver {
-    0% {
-      -webkit-transform: scale(1) rotateY(0);
-              transform: scale(1) rotateY(0);
-    }
-    50% {
-      -webkit-transform: scale(2.5) rotateY(90deg);
-              transform: scale(2.5) rotateY(90deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotateY(180deg);
-              transform: scale(1) rotateY(180deg);
-    }
-  }
-  @keyframes flip-scale-up-ver {
-    0% {
-      -webkit-transform: scale(1) rotateY(0);
-              transform: scale(1) rotateY(0);
-    }
-    50% {
-      -webkit-transform: scale(2.5) rotateY(90deg);
-              transform: scale(2.5) rotateY(90deg);
-    }
-    100% {
-      -webkit-transform: scale(1) rotateY(180deg);
-              transform: scale(1) rotateY(180deg);
-    }
-  }
+/* JUMBOTRON */
+
+.hello {
+  margin-top: 20px;
+}
 
 /* CARD */
 
-.card {
-    transition: transform 0.5s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.middle {
+.block-card {
   width: 70%;
   margin: auto;
 }
 
+.card {
+  transition: transform 0.5s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img {
+  max-width: 8rem; 
+  border-radius: 14px;
+}
+
+.fa-hand-holding-heart {
+  margin-top: 5px; 
+  color: red;
+}
+
+.fa-euro-sign {
+  margin-top: 5px;
+  margin-right: 5px;
+  color: green;
+}
+
+.fa-car-side {
+  margin-top: 5px;
+  color: blue;
+}
+
 /* MAPS */
 
+.block-maps {
+  justify-content: center; 
+  margin-top: 20px;
+}
+
 .maps {
-  width: 70%; 
+  width: 70%;
   padding-top: 10px;
+}
+
+.list-group {
+  width: 80%; 
+  margin: auto;
+}
+
+.list-group-item {
+  text-decoration: none; 
+  color: black;
+}
+
+.link-list {
+  text-decoration: none;
+  color: lightseagreen;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 30px;
+}
+
+.text-center {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*---------------- KEYFRAMES -----------------*/
+
+/* BTN NAVBAR */
+
+.btn-outline-success {
+  -webkit-animation: flip-scale-up-ver 0.5s ease-in-out reverse both;
+  animation: flip-scale-up-ver 0.5s ease-in-out reverse both;
+}
+
+@-webkit-keyframes flip-scale-up-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+    transform: scale(1) rotateY(0);
+  }
+
+  50% {
+    -webkit-transform: scale(2.5) rotateY(90deg);
+    transform: scale(2.5) rotateY(90deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotateY(180deg);
+    transform: scale(1) rotateY(180deg);
+  }
+}
+
+@keyframes flip-scale-up-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+    transform: scale(1) rotateY(0);
+  }
+
+  50% {
+    -webkit-transform: scale(2.5) rotateY(90deg);
+    transform: scale(2.5) rotateY(90deg);
+  }
+
+  100% {
+    -webkit-transform: scale(1) rotateY(180deg);
+    transform: scale(1) rotateY(180deg);
+  }
 }
 
 /* BTN MAPS */
 
 .btn-light:hover {
-	-webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+  animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 @-webkit-keyframes rotate-vert-center {
-    0% {
-      -webkit-transform: rotateY(0);
-              transform: rotateY(0);
-    }
-    100% {
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
-    }
-  }
-  @keyframes rotate-vert-center {
-    0% {
-      -webkit-transform: rotateY(0);
-              transform: rotateY(0);
-    }
-    100% {
-      -webkit-transform: rotateY(360deg);
-              transform: rotateY(360deg);
-    }
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
   }
 
-  @media only screen and (min-device-width : 280px) and (max-device-width : 1024px) {
-    
-    .contenair {
-      width: 75%;
-      margin: auto;
-    }
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
 
-    .maps {
-      width: 90%; 
-      padding-top: 10px;
-    }
-
+@keyframes rotate-vert-center {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
   }
 
-  @media only screen and (min-device-width : 280px) and (max-device-width : 411px) {
-    .display-4 {
-     font-size: 30px; 
-    }
-
-    .contenair {
-      width: 82%;
-      margin: auto;
-    }
-
-    .middle {
-      width: 100%;
-    }
-    
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
+}
+
+/*--------------------------- MEDIA QUERY -------------------------*/
+
+@media only screen and (max-device-width : 412px) {
+  .contenair {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-device-width : 330px) {
+
+  .list-group-item {
+    font-size: 13px;
+  }
+
+  .maps {
+    width: 100%;
+  }
+
+}
   
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-    .contenair {
-      width: 100%;
-    }
-
-    .middle {
-      width: 93%;
-    }
-
+@media only screen and (max-device-width : 409px) {
+  
+  .contenair {
+    width: 90%;
+    margin: auto;
   }
+
+  .list-group {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-device-width : 991px) {
+
+  .display-4 {
+    font-size: 30px;
+  }
+
+  .contenair {
+    width: 82%;
+    margin: auto;
+  }
+
+  .block-card {
+    width: 100%;
+  }
+
+  .nav-link:hover {
+    border-bottom: none;
+  }
+
+}
+
+@media only screen and (min-device-width : 280px) and (max-device-width : 1024px) {
+
+  .contenair {
+    width: 75%;
+    margin: auto;
+  }
+
+  .maps {
+    width: 90%;
+    padding-top: 10px;
+  }
+
+}
+

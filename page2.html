@@ -27,9 +27,9 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html" style="color:cornflowerblue; margin-left: 20px;">
+      <a class="navbar-brand" href="index.html">
         <i class="fas fa-box"></i>
-        O-A-B
+        <p class="text-logo">O-A-B</p>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ml-auto">
+        <ul class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
           </li>
@@ -54,7 +54,7 @@
 
   <div class="contenair">
     <div class="row">
-      <div class="jumbotron jumbotron-fluid" style="margin-top: 30px;">
+      <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">On compte sur toi !</h1>
           <p class="lead">Rejoints-nous et participe à l'évenement ! Vien donner le fond de ta garde-robe qui ne te sert
@@ -64,8 +64,8 @@
     </div>
   </div>
   <div class="contenair">
-    <div class="row" style="justify-content: space-around;">
-      <div class="card text-white bg-success mb-3" style="max-width: 38rem; border-radius: 10px;">
+    <div class="row block-card">
+      <div class="card text-white bg-success mb-3" >
         <div class="card-header">Valide <i class="far fa-check-circle"></i></div>
         <div class="card-body">
           <h5 class="card-title">Nous acceptons :</h5>
@@ -77,12 +77,12 @@
               les chaussures de tout type en bon état
             </li>
             <li>
-              les accesoires (chapeaux, bonnet, caasquette, etc...)
+              les accesoires (chapeaux, bonnets, casquettes, etc...)
             </li>
           </ul>
         </div>
       </div>
-      <div class="card text-white bg-danger mb-3" style="max-width: 38rem; border-radius: 10px;">
+      <div class="card text-white bg-danger mb-3" >
         <div class="card-header">Non valide <i class="fas fa-times"></i></div>
         <div class="card-body">
           <h5 class="card-title">Nous n'acceptons pas :</h5>
@@ -102,33 +102,39 @@
     </div>
   </div>
 
-  <div id="carousel" class="carousel slide" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel" data-slide-to="1"></li>
-      <li data-target="#carousel" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner text-center">
       <div class="carousel-item active">
         <h3 class="text-uppercase p-2">Samedi 14 juin</h3>
-        <p class="text" style="width: 50%; margin: auto; padding-bottom: 40px;">Pour la toute première donations de
+        <p class="text">
+          Pour la toute première donations de
           l'année, l'association à décidé
           de faire venir du renforts avec environs 15 bénévoles de plus ! C'est le jour de plus important de l'année
-          pour nous !</p>
+          pour nous !
+        </p>
       </div>
       <div class="carousel-item">
         <h3 class="text-uppercase p-2">Mercredi 4 Septembre</h3>
-        <p class="text" style="width: 50%; margin: auto; padding-bottom: 40px;">Pour la seconde donations, l'association
+        <p class="text">
+          Pour la seconde donations, l'association
           à prévu de récolter également
           des fournitures scolaires pour nos enfants! Il faut que les enfants puissent s'habiller, mais aussi pouvoir
-          étudier !</p>
+          étudier !
+        </p>
       </div>
       <div class="carousel-item">
         <h3 class="text-uppercase p-2">Vendredi 26 Octobre</h3>
-        <p class="text" style="width: 50%; margin: auto; padding-bottom: 40px;">Dans la dernière journée de donations,
+        <p class="text">
+          Dans la dernière journée de donations,
           l'association sera présente à l'endroit
           habituel (devant la Mairie de Lyon) ainsi qu'à l'heure habituelle (15h30). Il y aura le personnel habituel
-          ainsi que le président de l'association. </p>
+          ainsi que le président de l'association.
+        </p>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -142,7 +148,7 @@
   </div>
 
   <form>
-    <div class="form-row align-items-center" style="justify-content: center; margin-top: 20px;">
+    <div class="form-row align-items-center">
       <div class="col-auto my-1">
         <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
         <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
@@ -164,7 +170,7 @@
     </div>
   </form>
 
-  <footer class="bg-light text-center text-lg-start" style="margin-top: 30px;">
+  <footer class="bg-light text-center text-lg-start">
     <div class="container p-4">
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -195,11 +201,12 @@
         </div>
       </div>
     </div>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center p-3">
       © 2021 Copyright:
       <a class="text-dark" href="index.html">O-A-B.com</a>
     </div>
   </footer>
+
   <!--JQuery-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
